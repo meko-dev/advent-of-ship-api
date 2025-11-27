@@ -1,0 +1,25 @@
+{
+  "networks": {
+    "mekobase-sandbox-service": {
+      "driver": "bridge"
+    }
+  },
+  "services": {
+    "postgresql": {
+      "image": "bitnami/postgresql:latest",
+      "networks": ["mekobase-sandbox-service"],
+      "ports": ["5432:5432"],
+      "volumes": ["postgres-data:/bitnami/postgresql"],
+      "environment": [
+        "POSTGRESQL_USERNAME=postgres",
+        "POSTGRESQL_PASSWORD=123456",
+        "POSTGRESQL_DATABASE=mekobase_sandbox"
+      ]
+    }
+  },
+  "volumes": {
+    "postgres-data": {
+      "external": false
+    }
+  }
+}

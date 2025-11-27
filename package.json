@@ -1,0 +1,15 @@
+{
+  "name": "sandbox-service",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "bun install && bun run --watch src/index.js",
+    "start": "bun run src/index.js"
+  },
+  "dependencies": {
+    "@meko-base/hono-user-management": "0.1.0",
+    "hono": "4.7.4",
+    "nodemailer": "6.10.0",
+    "postgres": "3.4.5",
+    "zod": "3.24.2"
+  }
+}

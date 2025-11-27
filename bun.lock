@@ -1,0 +1,52 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "sandbox-service",
+      "dependencies": {
+        "@meko-base/hono-user-management": "0.1.0",
+        "hono": "4.7.4",
+        "nodemailer": "6.10.0",
+        "postgres": "3.4.5",
+        "zod": "3.24.2",
+      },
+    },
+  },
+  "packages": {
+    "@meko-base/hono-user-management": ["@meko-base/hono-user-management@0.1.0", "https://npm.pkg.github.com/download/@meko-base/hono-user-management/0.1.0/1ab121593b9e9da605b4f2415c099e945c779d77", { "dependencies": { "hono": "4.6.10", "paseto-ts": "1.5.7", "zod": "3.23.8" } }, "sha512-+5rQhiIou31NcNMNaoDIyQSYQ3x1zgAam2TaS5YTqQhqb9XCof6hp+XUE8Z9wXLJsRHQHSy/lulcxZyUDY8gEQ=="],
+
+    "@stablelib/binary": ["@stablelib/binary@1.0.1", "", { "dependencies": { "@stablelib/int": "^1.0.1" } }, "sha512-ClJWvmL6UBM/wjkvv/7m5VP3GMr9t0osr4yVgLZsLCOz4hGN9gIAFEqnJ0TsSMAN+n840nf2cHZnA5/KFqHC7Q=="],
+
+    "@stablelib/blake2b": ["@stablelib/blake2b@1.0.1", "", { "dependencies": { "@stablelib/binary": "^1.0.1", "@stablelib/hash": "^1.0.1", "@stablelib/wipe": "^1.0.1" } }, "sha512-B3KyKoBAjkIFeH7romcF96i+pVFYk7K2SBQ1pZvaxV+epSBXJ+n0C66esUhyz6FF+5FbdQVm77C5fzGFcEZpKA=="],
+
+    "@stablelib/chacha": ["@stablelib/chacha@1.0.1", "", { "dependencies": { "@stablelib/binary": "^1.0.1", "@stablelib/wipe": "^1.0.1" } }, "sha512-Pmlrswzr0pBzDofdFuVe1q7KdsHKhhU24e8gkEwnTGOmlC7PADzLVxGdn2PoNVBBabdg0l/IfLKg6sHAbTQugg=="],
+
+    "@stablelib/ed25519": ["@stablelib/ed25519@1.0.3", "", { "dependencies": { "@stablelib/random": "^1.0.2", "@stablelib/sha512": "^1.0.1", "@stablelib/wipe": "^1.0.1" } }, "sha512-puIMWaX9QlRsbhxfDc5i+mNPMY+0TmQEskunY1rZEBPi1acBCVQAhnsk/1Hk50DGPtVsZtAWQg4NHGlVaO9Hqg=="],
+
+    "@stablelib/hash": ["@stablelib/hash@1.0.1", "", {}, "sha512-eTPJc/stDkdtOcrNMZ6mcMK1e6yBbqRBaNW55XA1jU8w/7QdnCF0CmMmOD1m7VSkBR44PWrMHU2l6r8YEQHMgg=="],
+
+    "@stablelib/int": ["@stablelib/int@1.0.1", "", {}, "sha512-byr69X/sDtDiIjIV6m4roLVWnNNlRGzsvxw+agj8CIEazqWGOQp2dTYgQhtyVXV9wpO6WyXRQUzLV/JRNumT2w=="],
+
+    "@stablelib/random": ["@stablelib/random@1.0.2", "", { "dependencies": { "@stablelib/binary": "^1.0.1", "@stablelib/wipe": "^1.0.1" } }, "sha512-rIsE83Xpb7clHPVRlBj8qNe5L8ISQOzjghYQm/dZ7VaM2KHYwMW5adjQjrzTZCchFnNCNhkwtnOBa9HTMJCI8w=="],
+
+    "@stablelib/sha512": ["@stablelib/sha512@1.0.1", "", { "dependencies": { "@stablelib/binary": "^1.0.1", "@stablelib/hash": "^1.0.1", "@stablelib/wipe": "^1.0.1" } }, "sha512-13gl/iawHV9zvDKciLo1fQ8Bgn2Pvf7OV6amaRVKiq3pjQ3UmEpXxWiAfV8tYjUpeZroBxtyrwtdooQT/i3hzw=="],
+
+    "@stablelib/wipe": ["@stablelib/wipe@1.0.1", "", {}, "sha512-WfqfX/eXGiAd3RJe4VU2snh/ZPwtSjLG4ynQ/vYzvghTh7dHFcI1wl+nrkWG6lGhukOxOsUHfv8dUXr58D0ayg=="],
+
+    "@stablelib/xchacha20": ["@stablelib/xchacha20@1.0.1", "", { "dependencies": { "@stablelib/binary": "^1.0.1", "@stablelib/chacha": "^1.0.1", "@stablelib/wipe": "^1.0.1" } }, "sha512-1YkiZnFF4veUwBVhDnDYwo6EHeKzQK4FnLiO7ezCl/zu64uG0bCCAUROJaBkaLH+5BEsO3W7BTXTguMbSLlWSw=="],
+
+    "hono": ["hono@4.7.4", "", {}, "sha512-Pst8FuGqz3L7tFF+u9Pu70eI0xa5S3LPUmrNd5Jm8nTHze9FxLTK9Kaj5g/k4UcwuJSXTP65SyHOPLrffpcAJg=="],
+
+    "nodemailer": ["nodemailer@6.10.0", "", {}, "sha512-SQ3wZCExjeSatLE/HBaXS5vqUOQk6GtBdIIKxiFdmm01mOQZX/POJkO3SUX1wDiYcwUOJwT23scFSC9fY2H8IA=="],
+
+    "paseto-ts": ["paseto-ts@1.5.7", "", { "dependencies": { "@stablelib/blake2b": "^1.0.1", "@stablelib/ed25519": "^1.0.3", "@stablelib/xchacha20": "^1.0.1" } }, "sha512-K8E7NlkrKmYb4R1hRL8iTZEjaAjDd2fKvgVl3tWWMr0xK/Pt1DXyUnK0H7YyF1ORl9aYOxYfAbzt9IRvm20KNg=="],
+
+    "postgres": ["postgres@3.4.5", "", {}, "sha512-cDWgoah1Gez9rN3H4165peY9qfpEo+SA61oQv65O3cRUE1pOEoJWwddwcqKE8XZYjbblOJlYDlLV4h67HrEVDg=="],
+
+    "zod": ["zod@3.24.2", "", {}, "sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ=="],
+
+    "@meko-base/hono-user-management/hono": ["hono@4.6.10", "", {}, "sha512-IXXNfRAZEahFnWBhUUlqKEGF9upeE6hZoRZszvNkyAz/CYp+iVbxm3viMvStlagRJohjlBRGOQ7f4jfcV0XMGg=="],
+
+    "@meko-base/hono-user-management/zod": ["zod@3.23.8", "", {}, "sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g=="],
+  }
+}
