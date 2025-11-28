@@ -1,2 +1,0 @@
-[install.scopes]
-"@meko-base" = { token = "$NPM_GITHUB_TOKEN", url = "https://npm.pkg.github.com/" }
