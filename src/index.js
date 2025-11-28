@@ -237,7 +237,7 @@ app.use('/*', cors({ origin: CORS_ORIGINS, credentials: true }));
 app.get('/', context => context.text('Hello API!'));
 
 app.get('/challenge', context => {
-  const now = new Date('2025-12-01T00:02:17+05:00'); // new Date('2025-11-30T00:02:17+05:00'); // new Date();
+  const now = new Date(); // new Date('2025-11-30T00:02:17+05:00'); // new Date();
   const dayOfChallenge = Math.max(0, Math.floor((now - CHALLENGE_START_DATE.getTime()) / (1000 * 60 * 60 * 24)));
 
   const secondsUntilChallengeStart = Math.floor((CHALLENGE_START_DATE.getTime() - now) / 1000);
