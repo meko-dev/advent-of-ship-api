@@ -3,10 +3,10 @@ export const CHALLENGE_START_DATE = new Date('2025-11-30T05:00:00'); // new Date
 export const DAILY_TASKS = [
   {
     category: 'clarity',
-    title: 'Scope Patrol',
-    intro: 'Ruthlessly cut new ideas.',
-    prologue: 'As you build, your brain will constantly invent "cool new features" to add. These are dangerous distractions. You must actively defend the boundaries of your MVP every single day to ensure you actually ship on time.',
-    task: 'Look at your to-do list for the day. Identify one task that is "nice to have" but not critical for the Day 1 version. Move it to a "Post-Launch" list.'
+    title: 'The North Star',
+    intro: 'Re-read your problem statement.',
+    prologue: 'Complexity creeps in when we forget why we started. It is easy to get lost in technical details and drift away from the user\'s actual pain. Re-centering your focus every morning ensures you are not just building software, but solving the specific problem you set out to fix.',
+    task: 'Read the "Problem Statement" you defined on Day 1. Look at the code you plan to write today and simply ask: "Does this specific work directly help solve that problem?"'
   },
   {
     category: 'comm',
@@ -20,14 +20,14 @@ export const DAILY_TASKS = [
     title: 'The Daily Log',
     intro: 'Document the journey publicly.',
     prologue: 'Consistency beats virality. By posting even when you have nothing "big" to announce, you show potential users that you are active and reliable. It creates a paper trail of effort that builds trust with future buyers.',
-    task: 'Post one sentence or one screenshot of what you are working on right now to your social account. Tag it with #AdventOfShip.'
+    task: 'Post one sentence or one screenshot of what you are working on right now to your social account. Optionally, tag it with #AdventOfShip.'
   },
   {
     category: 'network',
     title: 'Give First',
     intro: 'Support one other builder.',
     prologue: 'Networking makes you feel less alone in the solo-dev journey. The best way to get support is to give it first. Building a small bank of good karma now ensures that people will care when you eventually launch.',
-    task: 'Find one person posting about their own project. reply to them with a genuine compliment or a specific question about their work. Do not talk about yourself.'
+    task: 'Try to find one person posting about their own project. Reply to them with a genuine compliment or a specific question about their work. Do not talk about yourself.'
   },
   {
     category: 'launch',
